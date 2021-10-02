@@ -9,23 +9,26 @@ int max(int a,int b,int c)
 		else
 			return c;
 	}
-    else if(b>=a)
-    {
-    	if(b>=c)
-    		return b;
+       else if(b>=a)
+       {
+    	        if(b>=c)
+    		        return b;
 		else
 			return c;
 	}
-    else
-    {
-    	return c;
+        else
+        {
+    	                return c;
 	}
 }
 
 
 int main()
 {
-	int a=442,b=22,c=1;
+	int a,b,c;
+	printf("Enter three Numbers : \n");
+	scanf("%d%d%d",a,b,c);
+	
 	printf("The Max: %d",max(a,b,c));
 	
 	return 0;
